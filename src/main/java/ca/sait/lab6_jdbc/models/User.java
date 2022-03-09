@@ -14,6 +14,9 @@ public class User implements Serializable {
     private String lastName;
     private String password;
     private Role role;
+    
+    public User() {
+    }
 
     public User(String email, boolean active, String firstName, String lastName, String password, Role role) {
         this.email = email;
@@ -22,10 +25,6 @@ public class User implements Serializable {
         this.lastName = lastName;
         this.password = password;
         this.role = role;
-    }
-
-    public User() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
     public String getEmail() {

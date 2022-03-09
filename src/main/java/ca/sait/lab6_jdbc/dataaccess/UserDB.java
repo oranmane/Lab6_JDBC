@@ -55,7 +55,7 @@ public class UserDB {
         Connection con = cp.getConnection();
         PreparedStatement ps = null;
         ResultSet rs = null;
-        String sql = "SELECT * FROM user INNER JOIN role ON role.role_id = user.role WHERE email=? LIMIT = 1";
+        String sql = "SELECT * FROM user INNER JOIN role ON role.role_id = user.role WHERE email=? LIMIT 1";
         
         try {
             ps = con.prepareStatement(sql);

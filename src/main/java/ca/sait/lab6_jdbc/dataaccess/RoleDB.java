@@ -27,10 +27,10 @@ public class RoleDB {
             rs = ps.executeQuery();
             
             while (rs.next()) {
-                int id = rs.getInt(1);
-                String name = rs.getString(2);
+                int roleId = rs.getInt(1);
+                String roleName = rs.getString(2);
                 
-                Role role = new Role(id, name);
+                Role role = new Role(roleId, roleName);
                                 
                 roles.add(role);
             }
