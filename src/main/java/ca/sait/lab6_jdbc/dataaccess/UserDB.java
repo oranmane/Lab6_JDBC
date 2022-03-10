@@ -32,8 +32,8 @@ public class UserDB {
                 String firstName = rs.getString(3);
                 String lastName = rs.getString(4);
                 String password = rs.getString(5);
-                int roleId = rs.getInt(6);
-                String roleName = rs.getString(7);
+                int roleId = rs.getInt(7);
+                String roleName = rs.getString(8);
                 
                 Role role = new Role(roleId, roleName);
                 User user = new User(email, active, firstName, lastName, password, role);

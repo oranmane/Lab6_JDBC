@@ -34,4 +34,7 @@ public class Role implements Serializable {
         this.name = name;
     }
 
+    public String toString() {
+        return String.format("%s", getName());
+    }
 }
